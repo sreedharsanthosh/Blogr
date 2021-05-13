@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <div class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="Hamburger" />
+        </div>
+        <h1 class="logo">Blogr</h1>
+        <li>
+          <select name="nav-links" id="nav-select">
+            <option value="products">Products</option>
+            <option value="overview">Overview</option>
+            <option value="pricing">Pricing</option>
+            <option value="marketplace">Marketplace</option>
+            <option value="features">Features</option>
+            <option value="integrations">Integrations</option>
+          </select>
+        </li>
+        <li>
+          <select name="nav-links" id="nav-select">
+            <option value="company">Company</option>
+            <option value="about">About</option>
+            <option value="team">Team</option>
+            <option value="blog">Blog</option>
+            <option value="careers">Careers</option>
+          </select>
+        </li>
+        <li>
+          <select name="nav-links" id="nav-select">
+            <option value="connect">Connect</option>
+            <option value="contact">Contact</option>
+            <option value="newsletter">Newsletter</option>
+            <option value="linkedin">Linkedin</option>
+          </select>
+        </li>
+      </ul>
+      <ul class="sign-in">
+        <li>Login</li>
+        <li><button class="sign-up-btn">Sign Up</button></li>
+      </ul>
+    </nav>
+    <main class="home">
+      <img src="./images/bg-pattern-intro.svg" alt="" />
+      <div class="home-main-text">
+        <h1 data-aos="fade-up">
+          <span class="modern-text"> A modern</span> publishing platform
+        </h1>
+        <h4 data-aos="fade-up" data-aos-delay="200">
+          Grow your audience and build your online brand
+        </h4>
+        <div data-aos="fade-up" data-aos-delay="300" class="home-main-buttons">
+          <button class="main-btn1">Start for Free</button>
+          <button class="main-btn2">Learn More</button>
+        </div>
+      </div>
+    </main>
+    <main class="specialities">
+      <h1 class="special-title">Designed for the future</h1>
+      <div class="quality-container">
+        <div class="qualities" data-aos="fade-up">
+          <h1>Introducing an extensible editor</h1>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+        <div class="qualities" data-aos="fade-up">
+          <h1>Robust content management</h1>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </div>
+      <img
+        src="./images/illustration-editor-desktop.svg"
+        alt="illustration"
+        class="special-img"
+      />
+    </main>
+    <main class="phones-container">
+      <img src="./images/illustration-phones.svg" alt="" class="phones-img" />
+      <main class="phones">
+        <div class="phone-images">
+          <div class="phone-circles">
+            <img
+              class="phone-circles-img"
+              src="./images/bg-pattern-circles.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="phones-txt">
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </main>
+    </main>
+    <main class="features">
+      <div class="features-img">
+        <img src="./images/illustration-laptop-desktop.svg" alt="" />
+      </div>
+      <div class="features-text-container">
+        <div class="features-txt">
+          <h1>Free, open, simple</h1>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+        <div class="features-txt">
+          <h1>Powerful tooling</h1>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1 class="footer-h1">Blogr</h1>
+      <ul class="products">
+        <h1>Products</h1>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+      <ul class="company">
+        <h1>Company</h1>
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+      <ul class="connect">
+        <h1>Connect</h1>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>Linkedin</li>
+      </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
