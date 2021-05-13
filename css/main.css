@@ -62,10 +62,6 @@ nav {
   font-weight: bolder;
 }
 
-.hamburger {
-  display: none;
-}
-
 .sign-in {
   width: 20%;
   position: absolute;
@@ -362,9 +358,61 @@ footer ul h1 {
   margin-bottom: 3vh;
 }
 
+.hamburger {
+  position: fixed;
+  left: 3vw;
+  top: 4vh;
+  display: none;
+  z-index: 8;
+}
+
+.nav-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (max-width: 700px) {
   nav {
-    display: none;
+    position: fixed;
+    height: 88vh;
+    width: 70vw;
+    right: 0vh;
+    top: 0vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    z-index: 9;
+    color: black;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  .nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: black;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 50vh;
+  }
+  .sign-in {
+    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: -30vh;
+  }
+  .hamburger {
+    display: block;
   }
   .home {
     height: 100vh;
